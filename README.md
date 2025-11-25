@@ -6,10 +6,10 @@ docker build -t face-cam-app .
 docker run --rm -it --device=/dev/video0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix face-cam-app
 
 # Run with webcam access (macOS/Windows may need different configurations)
-//Build the image
+# Build the image
 docker build -t face-cam-app .
 
-//Run the container
+# Run the container
 docker run --rm -it \
   --device=/dev/video0 \
   -p 5000:5000 \
